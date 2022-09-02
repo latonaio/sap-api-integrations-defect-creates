@@ -35,21 +35,21 @@ Latona および AION の SAP 関連リソースでは、Inputs フォルダ下�
 * sample.jsonの記載例(1)  
 
 accepter において 下記の例のように、データの種別（＝APIの種別）を指定します。  
-ここでは、"DefectText" が指定されています。    
+ここでは、"Header" が指定されています。    
   
 ```
-"api_schema": "sap.s4.beh.defect.v1.Defect.Created.v1",
-"accepter": ["DefectText"],
+"api_schema": "SAPDefectCreates",
+"accepter": ["Header"],
 "defect_code": "",
 "deleted": false
 ```
   
-* 全データを取得する際のsample.jsonの記載例(2)  
+* 全データを登録する際のsample.jsonの記載例(2)  
 
-全データを取得する場合、sample.json は以下のように記載します。  
+全データを登録する場合、sample.json は以下のように記載します。  
 
 ```
-"api_schema": "sap.s4.beh.defect.v1.Defect.Created.v1",
+"api_schema": "SAPDefectCreates",
 "accepter": ["All"],
 "defect_code": "",
 "deleted": false
@@ -95,8 +95,8 @@ func (c *SAPAPICaller) AsyncPostDefect(
 
 
 ```
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-creates/SAP_API_Caller/caller.go#L50",
-	"function": "sap-api-integrations-creates/SAP_API_Caller.(*SAPAPICaller).Header",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-defect-creates/SAP_API_Caller/caller.go#L50",
+	"function": "sap-api-integrations-defect-creates/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
 	"message": "[{XXXXXXXXXXXXXXXXXXXXXXXXXXXXX}]",
 	"time": "2021-12-11T15:33:00.054455+09:00"

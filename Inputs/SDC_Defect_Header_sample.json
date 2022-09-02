@@ -5,7 +5,7 @@
 	"filepath": "/var/lib/aion/Data/rededge_sdc/abcdef.json",
 	"Defect": {
 		"DefectInternalID": "",
-		"Defect": "4",
+		"Defect": "",
 		"DefectCategory": "",
 		"CreationDate": "",
 		"LastChangeDate": "",
@@ -45,8 +45,8 @@
 		"CatalogProfile": "",
 		"ChangedDateTime": ""
 	},
-	"api_schema": "sap.s4.beh.defect.v1.Defect.Created.v1",
+	"api_schema": "SAPDefectCreates",
 	"accepter": ["Header"],
-	"defect_code": "4",
+	"defect_code": "",
 	"deleted": false
 }
